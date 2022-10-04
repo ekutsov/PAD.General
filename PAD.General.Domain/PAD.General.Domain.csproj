@@ -5,8 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Authors>ekutsov</Authors>
-    <PackageProjectUrl>https://github.com/ekutsov/PAD.Extensions/PAD.General.Domain</PackageProjectUrl>
-	<Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/ekutsov/PAD.General/tree/master/PAD.General.Domain</PackageProjectUrl>
+	  <Version>1.0.0</Version>
   </PropertyGroup>
 
 </Project>
