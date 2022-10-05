@@ -11,4 +11,7 @@ public abstract class BaseController<TService> : ControllerBase
 
     protected ActionResult<Response<T>> ResponseResult<T>(T result) =>
         new Response<T>(result);
+
+    protected ActionResult<Response<bool>> SuccessResult() =>
+        new Response<bool>(true);
 }
