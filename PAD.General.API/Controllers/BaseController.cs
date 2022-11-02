@@ -9,9 +9,14 @@ public abstract class BaseController<TService> : ControllerBase
         _service = service;
     }
 
-    protected ActionResult<Response<T>> ResponseResult<T>(T result) =>
-        new Response<T>(result);
-
-    protected ActionResult<Response<bool>> SuccessResult() =>
-        new Response<bool>(true);
+#pragma warning disable IDE0051 // Удалите неиспользуемые закрытые члены
+    private Guid UserId
+#pragma warning restore IDE0051 // Удалите неиспользуемые закрытые члены
+    {
+        get
+        {
+            string? userId = User.FindFirst("sub")?.Value;
+            return userId != null ? Guid.Parse(userId) : Guid.Empty;
+        }
+    }
 }
