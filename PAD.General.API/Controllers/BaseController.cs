@@ -9,9 +9,7 @@ public abstract class BaseController<TService> : ControllerBase
         _service = service;
     }
 
-#pragma warning disable IDE0051 // Удалите неиспользуемые закрытые члены
-    private Guid UserId
-#pragma warning restore IDE0051 // Удалите неиспользуемые закрытые члены
+    protected Guid UserId
     {
         get
         {
